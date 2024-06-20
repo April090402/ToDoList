@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gami/models/category_model.dart';
 import 'package:table_calendar/table_calendar.dart';
 
+// ignore: must_be_immutable
 class homePage extends StatelessWidget {
   homePage({super.key});
 
@@ -151,7 +152,7 @@ class homePage extends StatelessWidget {
         SizedBox(
           height: 15,
         ),
-        Container(
+        SizedBox(
           height: 120,
           child: ListView.separated(
               itemCount: categories.length,
